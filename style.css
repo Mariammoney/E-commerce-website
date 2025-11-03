@@ -1,0 +1,256 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* spinner section */
+.load-display{
+    display: flex;
+    height: 80vh ;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+.hero-img{
+    height: 70vh;
+    object-fit: cover;
+
+}
+
+.hero{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.hero-carousel-option{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.795), rgba(5, 5, 5, 0.075))
+}
+/* nav section */
+.nav-button-flex{
+    gap: 20px;
+}
+
+.toast-css{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+
+/* content section */
+
+
+.content-group{
+    padding-left: 40px;
+    padding-right: 40px;
+    
+
+}
+
+.content-second{
+    height: 300px;
+  
+    padding: 20px;
+}
+.content-first{
+    height: 300px;
+    padding: 20px
+}
+.content-third{
+    height: 300px;
+   
+    padding: 20px 10px;
+}
+.card-one{
+    background-color: rgba(190, 26, 26, 0.981);
+    border-radius: 20px;
+    height: 260px;
+    padding: 10px;
+    width: auto;
+    color: white;
+}
+.card-two{
+     background-color: rgb(7, 120, 148);
+    border-radius: 20px;
+    height: 260px;
+    width: auto;
+    padding: 10px;
+    color: white;
+}
+.blush{
+padding-top: -40px;
+}
+.card-three{
+     background-color: rgb(2, 170, 2);
+    border-radius: 20px;
+    height: 260px;
+    width: auto;
+    padding: 10px;
+    color: white;
+}
+.powder{
+    width: 200px;
+}
+.one-card{
+ background-color: rgba(190, 26, 26, 0.981);
+    border-radius: 20px;
+    height: 260px;
+    padding: 10px;
+    width: auto;
+    color: white;
+}
+.polish{
+    width: 160px;
+    height: 120px;
+}
+.two-card{
+ background-color: rgb(7, 120, 148);
+    border-radius: 20px;
+    height: 260px;
+    width: auto;
+    padding: 10px;
+    color: white;
+}
+.skincare{
+    height: 150px;
+}
+.three-card{
+ background-color: rgb(2, 170, 2);
+    border-radius: 20px;
+    height: 260px;
+    width: auto;
+    padding: 10px;
+    color: white;
+}
+.perfume{
+    height: 150px;
+    width: 120px;
+}
+
+
+
+/* products section */
+.products-wrapper{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product-card .product-img{
+    width: 250px;
+    object-fit: cover;
+}
+.rating-wrapper{
+    background-color: orange;
+    width: 80px;
+    height: 30px;
+    align-items: center;
+    justify-content: centre;
+    gap: 5px;
+    color: white;
+    border-radius: 10px;
+}
+
+.rating-wrapper .rating-img{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.goto-button{
+    background-color: orange;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.goto-button .goto-img{
+    width: 20px !important;
+    height: 20px !important;
+    object-fit: cover;
+}
+.product-card{
+    padding: 0;
+}
+.lower-links{
+    align-items: center;
+    justify-content: space-around;
+}
+.FAQS{
+    padding-top: 40px;
+    gap: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.FAQ h3{
+    font-weight: bold;
+    text-align: center;
+}
+.faq{
+    height: 300px;
+    border-radius: 8px;
+}
+.random{
+    text-align: center;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: ridge;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.footer{
+    font-size: 14px;
+    justify-content: space-between;
+    list-style: none;
+    color: #fff;
+    background-color: black;
+    padding-bottom: 30px;
+    padding-right: 10px;
+}
+
+
+.big{
+    font-weight: bold;
+}
+.icon{
+    width: 20px;
+    gap: 20px;
+}
+.right{
+    text-align: center;
+    color: gray;
+}
+@media screen and (max-width:900px) {
+    .FAQS{
+        display: flex;
+        flex-direction: column;
+    }
+    .faq{
+        width: 250px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column !important;
+        padding-left: 10px;
+    }
+}

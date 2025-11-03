@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/About/style.css"/>
+    <title>About BeautyStorr</title>
+</head>
+<body>
+
+  <!-- Nav bar -->
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">
+          <img src="/assets/images/properlogo.png" alt="our-logo" />
+           <span class="email-display"></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About/about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact/contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="d-flex nav-button-flex">
+            <button
+              type="button"
+              class="btn btn-outline btn-outline-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#myModalSignin"
+            >
+              Log in
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+            >
+              Sign Up
+            </button>
+
+            <form class="d-flex">
+              <!-- <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+     <!-- modal for sign up -->
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Sign up</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- modal toast -->
+
+          <!-- Modal body for sign up-->
+          <div class="modal-body">
+            <form action="*" class="needs-validation">
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your full name"
+                  name="name"
+                  required
+                />
+
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out your name.</div>
+              </div>
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter email"
+                  name="email"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out your email.</div>
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pwd"
+                  placeholder="Enter password"
+                  name="pswd"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">
+                  Please fill out your password.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="gender" class="form-label">Gender:</label>
+                <select class="form-select" required>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Prefer Not To Say</option>
+                </select>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please select an option.</div>
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="remember"
+                  />
+                  Remember me
+                </label>
+              </div>
+            </form>
+            <button type="submit" class="btn btn-outline-warning toastbtn">
+              Submit
+            </button>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal for sign in -->
+
+    <!-- The Modal -->
+    <div class="modal" id="myModalSignin">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Sign In</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- modal toast -->
+
+          <!-- Modal body for sign up-->
+          <div class="modal-body">
+            <form action="*" class="needs-validation">
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input
+                  type="email"
+                    class="signin-email form-control"
+                  id="email"
+                  placeholder="Enter email"
+                  name="email"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out your email.</div>
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pwd"
+                  placeholder="Enter password"
+                  name="pswd"
+
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">
+                  Please fill out your password.
+                </div>
+              </div>
+
+              <div class="form-check mb-3">
+                <label class="form-check-label">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="remember"
+                  />
+                  Remember me
+                </label>
+              </div>
+            </form>
+            <button type="submit" class="btn btn-outline-warning toastbtn">
+              <button type="submit" class="btn btn-outline-warning toastbtn signin-button">
+              Submit
+            </button>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top mt-3">
+      <p>Home/<strong>About</strong></p>
+    </div>
+
+
+  <!-- Hero-Section -->
+    <section class="hero-section">
+     
+
+   
+    <section class="About-us-section">
+      
+      <div class=" aboutt container-fluid d-flex ">
+        <div class="about-us mb-3 d-block">
+          <h1 class="store-name mb-3">Beauty Storr</h1>
+          <p>Welcome to <strong>Beauty Storr, </strong>your ultimate destination for everything beauty and self-care.<br>
+          We're passionate about helping every woman feel confident, radiant, and unapologetically herself. From everyday <bold>makeup must-haves </bold>to nourishing <bold>skincare essentials</bold> and irresistible <bold>perfumes, </bold>we bring together all the beauty favourites you love - in one place.</p>
+           <p>At <strong>Beauty Storr,</strong> beauty isn't just a look - it's a lifestyle.<br> 
+          Our goal is to make self-care simple, affordable, and empowering for every lady who walks through our doors or shop online.<br>
+        </p>
+        </div>
+         
+
+
+        <div class="image">
+          <img src="/assets/images/Side Image.png" class="img">
+        </div>
+        </div>
+     
+    </section>
+     </section>
+
+     <section class="review">
+      <div class="FRAME d-flex">
+       <div class="reviewa d-block"><img src="/assets/images/frame1.png"><h5>10.5k</h5><p>Sallers active our site</p>
+      </div>
+        <img src="/assets/images/frame2.png" class="fra">
+        <img src="/assets/images/frame3.png" class="fra">
+        <img src="/assets/images/frame4.png" class="fra">
+      </div>
+
+     </section>
+
+     <section class="Founders">
+      <div class="founder d-flex container-fluid">
+        <div class="founder-a">
+          <img src="/assets/founder-a.png" class="fat">
+          <h4>Tom Cruise</h4>
+          <p>Founder and chairman</p>
+          <div class="icons d-flex">
+          <img src="https://img.icons8.com/?size=100&id=60452&format=png&color=1A1A1A" alt="twitter" class="icon">
+          <img src="https://img.icons8.com/?size=100&id=32292&format=png&color=1A1A1A" alt="insta" class="icon">
+          <img src="https://img.icons8.com/?size=100&id=uzhJQ5CyNoaH&format=png&color=1A1A1A" alt="link" class="icon">
+          </div>
+        </div>
+
+        <div class="founder-b">
+          <img src="/assets/founder-b.png" class="fat">
+          <h4>Emma Watson</h4>
+          <p>Managing director</p>
+           <div class="icons d-flex">
+          <img src="https://img.icons8.com/?size=100&id=60452&format=png&color=1A1A1A" alt="twitter" class="icon">
+          <img src="https://img.icons8.com/?size=100&id=32292&format=png&color=1A1A1A" alt="insta" class="icon">
+          <img src="https://img.icons8.com/?size=100&id=uzhJQ5CyNoaH&format=png&color=1A1A1A" alt="link" class="icon">
+          </div>
+        </div>
+
+
+        <div class="founder-c">
+          <img src="/assets/images/founder-c.png" class="fat">
+          <h4>Will Smith</h4>
+          <p>Product designer</p>
+           <div class="icons d-flex">
+          <img src="https://img.icons8.com/?size=100&id=60452&format=png&color=1A1A1A" alt="twitter" class="icon">
+          <img src="https://img.icons8.com/?size=100&id=32292&format=png&color=1A1A1A" alt="insta" class="icon">
+          <img src="https://img.icons8.com/?size=100&id=uzhJQ5CyNoaH&format=png&color=1A1A1A" alt="link" class="icon">
+          </div>
+        </div>
+       
+      </div>
+      <div class="spin">
+       <img src="/assets/spin.png" alt="spin" class="spin">
+       </div>
+     </section>
+
+     <section class="Parts">
+      <div class="part d-flex">
+        <div class="free">
+          <img src="/assets/images/Services.png" class="services">
+          <h4><bold>FREE AND FAST DELIVERY</bold></h4>
+          <p>Free delivery For all orders over 140$</p>
+        </div>
+
+        <div class="customer">
+          <img src="/assets/images/Services (1).png" class="services">
+          <h4><bold>24/7 CUSTOMER SERVICE</bold></h4>
+          <p>Friendly 24/7 customer support</p>
+        </div>
+
+        <div class="money">
+          <img src="/assets/images/Services (2).png" class="services">
+          <h4><bold>MONEY BACK GURANTEE</bold></h4>
+          <p>We return money backwithin 30 days</p>
+        </div>
+      </div>
+
+     </section>
+
+     <section class="footer">
+        <!-- <div class="container d-flex bg-black "> -->
+            <div class="footer d-flex mt-3">
+            <div class="first mt-3">
+                <ul><p class="big">Beauty storr</p></ul>
+                <ul>
+    
+    <p>Subscribe</p>
+    <p>Ger 10% off your first order</p>
+    <p>Enter email</p>
+    
+  </ul>
+            </div>
+
+            <div class="second mt-3">
+                <ul><p class="big">Support</p></ul>
+                <ul>
+                   
+                    <p>12, adebisi sreet, oyo.</p>
+                    <p>beautystorr@gmail.com</p>
+                    <p>+23485947782</p>
+                   
+                </ul>
+
+            </div>
+
+             <div class="third mt-3">
+                <ul><p class="big">Account</p></ul>
+                <ul>
+                   
+                    <p>My Account</p>
+                    <p>Login/Register</p>
+                    <p>Cart</p>
+                    <p>Wishlist</p>
+                    <p>Shop</p>
+                    </ul>
+                 </div>
+
+
+             <div class="fourth mt-3">
+                <ul><p class="big">Quick link</p></ul>
+                <ul>
+                     <p>Privacy policy</p>
+                    <p>Terms of use</p>
+                    <p>FAQ</p>
+                    <p>Contact</p>
+                   </ul>
+             </div>
+
+              <div class="fifth mt-3">
+                <ul><p class="big">Download App</p></ul>
+                <ul>
+                   <p>Save 3 with App, New user only</p>
+                    <img src="/assets/Frame 719.png" alt="qr-code">
+                    <div class="icons">
+                        <img src="https://img.icons8.com/?size=100&id=118487&format=png&color=FFFFFF" alt="facebook" class="icon">
+                        <img src="https://img.icons8.com/?size=100&id=60452&format=png&color=FFFFFF" alt="twitter" class="icon">
+                        <img src="https://img.icons8.com/?size=100&id=85154&format=png&color=FFFFFF" alt="insta" class="icon">
+                        <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=FFFFFF" alt="linkedin" class="icon">
+                    </div>
+                   
+                </ul>
+
+            </div>
+            
+            </div>
+            
+
+<p class="right">Copywright@mariam 2025. All rights reserved</p>
+        </div>
+        
+
+    </section>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="About/script.js"></script>  
+</body>
+</html>
