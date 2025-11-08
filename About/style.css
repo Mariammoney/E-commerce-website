@@ -39,10 +39,52 @@
     width: 90%;
     justify-content: space-between;
     padding-left: 50px;
+    
 }
 .fra{
-    width: 20px;
+    width: 50px;
+    align-items: center;
 }
+ .reviewa{
+    padding-top: 20px;
+    height: 150px;
+    width: 160px;
+     align-items: center; 
+    gap: 0px;
+    padding-top: 20px;
+     padding-left: 10px;
+    padding-right: 10px; 
+ }
+
+
+.reviewa:hover{
+    background: rgba(255, 0, 0, 0.677);
+    transition: 0.3s;
+}
+.a-block{
+    align-items: center;
+    text-align: center;
+    border: ridge;
+}
+
+.e-block{
+    align-items: center;
+    text-align: center;
+     border: ridge;
+}
+.f-block{
+    align-items: center;
+    text-align: center;
+     border: ridge;
+}
+.g-block{
+    align-items: center;
+    text-align: center;
+     border: ridge;
+}
+
+
+
 .founder{
     
      height: 60%;
@@ -79,7 +121,19 @@
 .services{
     padding-bottom: 10px;
     justify-content: center;
-    padding-left: 40px;
+   
+}
+.customer{
+    align-items: center;
+    text-align: center;
+}
+.free{
+    align-items: center;
+    text-align: center;
+}
+.money{
+    align-items: center;
+    text-align: center;
 }
 @media screen and (max-width:900px){
     .aboutt{
@@ -106,6 +160,12 @@
         display: flex;
         flex-direction: column;
     }
+    .FRAME{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
  
 }
 @media screen and (max-wdth:560px){
@@ -129,7 +189,7 @@
 @media screen and (max-width:320px){
     .founder{
         align-items: center;
-        padding-left: 20px;
+       
     }
 }
 @media screen and (max-width:700px){
@@ -138,6 +198,7 @@
         flex-direction: column !important;
         padding-left: 10px;
     }
+    
     
 }
 .footer{
